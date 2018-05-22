@@ -17,14 +17,14 @@ sys.setdefaultencoding('utf-8')
 # 统一访问session
 print os.path
 # 连接数
-requests.adapters.DEFAULT_RETRIES = 5
+requests.adapters.DEFAULT_RETRIES = 10
 se = requests.session()
 se.keep_alive = False
 # 代理服务器
 # se.proxies = {"https://"}
 # 变更工作空间
-os.chdir(r'G:\pythonproject\srcrap')
-path = r'G:\pythonproject\srcrap\img'
+os.chdir(r'D:\scrap')
+path = r'D:\scrap\img'
 
 class Pixiv(object):
     '''pixiv请求类'''
